@@ -1,0 +1,94 @@
+/* Reset gaya default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cambria', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #f3dd18, #e0109e);
+    color: white;
+}
+
+/* Container utama */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* Judul dengan animasi */
+h1 {
+    font-size: 50px;
+    color: #3124df;
+    text-shadow: 2px 2px 5px black;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animasi muncul */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Pesan ulang tahun */
+p {
+    font-size: 22px;
+    color: #111113;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Marquee animasi */
+marquee {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(218, 40, 40);
+    text-transform: uppercase;
+}
+
+/* Galeri gambar */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(5, 5, 5, 0.685);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Audio dan video */
+audio, video {
+    margin-top: 20px;
+    border: 2px solid rgb(211, 24, 24);
+    border-radius: 10px;
+}
+
+/* Tombol Play/Pause */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: #3124df;
+    color: white;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+    background: #2114a8;
+}
